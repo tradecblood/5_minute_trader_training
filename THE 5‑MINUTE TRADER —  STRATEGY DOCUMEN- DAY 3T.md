@@ -30,6 +30,11 @@ The strategy uses:
   - **Trade 2** (retest & continuation)  
 - Some days you **skip Trade 1** if the market is too choppy.
 
+### Volume:
+- Volume tells you whether the trend has fuel — rising volume = strength, falling volume = weakness (especially if multiple bars stay the same size for several candles in a row.
+- Falling volume means the trend is dying, while rising volume means a continuation is building.
+- Green volume bars only support bullish momentum when price is above the 9 EMA and the 9 EMA is above the 21 EMA, while red volume bars only support bearish momentum when price is below the 9 EMA and the 9 EMA is below the 21 EMA).
+
 ### **Thinkorswim Platform Basics**
 - The **Trade tab** shows the **options chain**  
 - Purple highlight = **at‑the‑money** (intrinsic value)  
