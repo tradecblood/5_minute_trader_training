@@ -9,7 +9,7 @@
 
 ### **Expiration**
 - Use **0DTE** (zero days to expiration)  
-- Or **tomorrow’s expiration**  
+- Or **tomorrow’s expiration**   (use this when volatility is extremely high, premiums are too expensive, or you want smoother/less jumpy price movement — tomorrow’s expiration is more stable but still fast enough for the strategy)
 - Usually trade **SPX**, sometimes **SPY**
 
 ### **What the Strategy Is**
