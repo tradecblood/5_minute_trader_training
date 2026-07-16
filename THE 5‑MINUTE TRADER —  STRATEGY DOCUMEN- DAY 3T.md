@@ -99,7 +99,7 @@ Some days you **only use Strategy 2** if the market is too choppy.
 ---
 
 ## **Exit Logic**
-10. Exit when price reaches the **nearest support or resistance line**  
+10. Exit when price reaches the **nearest support or resistance line**  If price reaches the 200 EMA in the direction of your trade, you exit — it counts as support/resistance and is usually the strongest support/resistance.
 11. Ideally this exit should be **at least 10 points** from the nearest 5‑minute line  
     - This satisfies your **10‑point target**
 
