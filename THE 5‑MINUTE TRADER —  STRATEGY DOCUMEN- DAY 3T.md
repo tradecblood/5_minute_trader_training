@@ -17,6 +17,7 @@ The 5‑minute trading strategy uses the **first 5‑minute candle** to aim for 
 
 We **chart ES**  
 We **trade SPX options**  
+**ES is the msot accurate represenation of market direction, so we sue it to chart price lines before trading SPX options. Both ES and SPX are the S&P 500. SPX moces with ES, but pys more for the same market move. Thnk of ES as he map and SPX as he car you use to drive.**
 **10 points on ES is ALWAYS the first target.**
 
 The strategy uses:
