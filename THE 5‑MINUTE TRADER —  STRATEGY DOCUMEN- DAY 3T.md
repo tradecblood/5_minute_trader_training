@@ -153,3 +153,173 @@ Whichever strategy you choose,
 - **10 points on ES is ALWAYS the first target.**  
 - Uses **9/21/200 EMAs** + **1‑hour trend**.  
 - Two trades exist: **Trade 1 (scalp)** and **Trade 2 (retest)**.  
+- Skip Trade 1 if the market is too choppy.
+
+---
+
+# ⭐ **TRADE 1 — FIRST 5‑MINUTE CANDLE BREAK (SCALP)**
+
+### **Pre‑Market Prep (on ES)**
+1. Mark pre‑market **support/resistance**.  
+2. Mark **9/21 EMA cross** + **200 EMA** on **1D** and **4H**.  
+3. On the **5‑minute chart**:  
+   - Look left for **choppiness** → draw **chop box** if needed.  
+   - Mark pre‑market levels (targets/exits).
+
+### **Mark the First Candle**
+4. Mark **top** and **bottom** of the first 5‑minute candle.  
+5. Draw a line **10 points above** the top.  
+6. Draw a line **10 points below** the bottom.  
+7. Identify any **support/resistance** in breakout direction.
+
+### **Entry**
+8. If choppy → wait for candle to:  
+   - Break out of chop box  
+   - AND break one of the 10‑point lines  
+   - Even if half‑in/half‑out  
+9. Enter on breakout.
+
+### **Exit**
+10. Exit at nearest **support/resistance**.  
+11. Ideally ≥ **10 points** from breakout line.
+
+---
+
+# ⭐ **TRADE 2 — RETEST & CONTINUATION (SAFER)**
+
+### **Entry**
+1. Wait for candle to break **fully** out of chop box.  
+2. Candle must **float** above/below the box.  
+3. Breakout must match **9/21 EMA cross direction**  
+   - Bullish → green bar  
+   - Bearish → red bar  
+4. Enter on confirmed breakout.
+
+### **Exit**
+5. Exit at next **support/resistance**.  
+6. Confirm momentum with **9 EMA**:  
+   - Uptrend → candles above 9 EMA  
+   - Downtrend → candles below 9 EMA  
+7. Target = **20 points**.
+
+### **Trailing Stop / Runners**
+8. Two exits: **10 points** and **20 points**.  
+9. Sell most at **10 points**.  
+10. Keep **runners** until **20 points**.
+
+---
+
+# ⭐ **Execution**
+Enter trades in **Thinkorswim** using **SPX options**.
+
+---
+
+# ⭐ **VISUAL FLOWCHART — 5‑MINUTE TRADER**
+                         ┌───────────────────────────────┐
+                         │     PRE‑MARKET PREPARATION     │
+                         └───────────────────────────────┘
+                                      │
+                                      ▼
+                 ┌────────────────────────────────────────────┐
+                 │ Mark ES: Pre‑market S/R + 9/21 + 200 (1D/4H)│
+                 └────────────────────────────────────────────┘
+                                      │
+                                      ▼
+                 ┌────────────────────────────────────────────┐
+                 │ 5M Chart: Look left → Is pre‑market choppy? │
+                 └────────────────────────────────────────────┘
+                                      │
+                     ┌────────────────┴────────────────┐
+                     ▼                                 ▼
+            ┌────────────────┐                ┌────────────────┐
+            │     CHOPPY     │                │   NOT CHOPPY   │
+            └────────────────┘                └────────────────┘
+                     │                                 │
+                     ▼                                 ▼
+            Draw chop box                        No chop box
+                     │                                 │
+                     ▼                                 ▼
+            ┌────────────────────────────────────────────┐
+            │ Mark first 5M candle top/bottom + ±10 pts  │
+            └────────────────────────────────────────────┘
+                                      │
+                                      ▼
+                         ┌───────────────────────────────┐
+                         │     TRADE DECISION POINT       │
+                         └───────────────────────────────┘
+                                      │
+                     ┌────────────────┴────────────────┐
+                     ▼                                 ▼
+            ┌────────────────┐                ┌────────────────────┐
+            │ TRADE 1 (Scalp)│                │  TRADE 2 (Retest)  │
+            └────────────────┘                └────────────────────┘
+                     │                                 │
+                     ▼                                 ▼
+            Break chop box +                   Break chop box fully +
+            break ±10pt line                   float candle + EMA trend
+                     │                                 │
+                     ▼                                 ▼
+            Enter SPX option                    Enter SPX option
+                     │                                 │
+                     ▼                                 ▼
+            Exit at S/R or 10 pts               Exit at S/R or 20 pts
+                     │                                 │
+                     ▼                                 ▼
+            Runners follow 9 EMA                Runners follow 9 EMA
+
+
+
+---
+
+# ⭐ **STEP‑BY‑STEP MORNING CHECKLIST**
+
+## **PRE‑MARKET (ES)**
+- [ ] Mark pre‑market **support/resistance**  
+- [ ] Mark **9/21 EMA cross** on 1D  
+- [ ] Mark **200 EMA** on 1D  
+- [ ] Mark **9/21 EMA cross** on 4H  
+- [ ] Mark **200 EMA** on 4H  
+- [ ] Switch to **5‑minute chart**  
+- [ ] Look left for **choppiness**  
+- [ ] If choppy → **draw chop box**  
+- [ ] Mark pre‑market levels on 5M  
+- [ ] Identify nearby **support/resistance** for exits
+
+---
+
+## **FIRST 5‑MINUTE CANDLE**
+- [ ] Mark **top** and **bottom**  
+- [ ] Draw **+10 point line** above  
+- [ ] Draw **–10 point line** below  
+- [ ] Identify nearest **S/R** in breakout direction
+
+---
+
+## **TRADE 1 — SCALP**
+- [ ] Was pre‑market choppy?  
+  - If yes → wait for breakout of chop box  
+- [ ] Did candle break ±10pt line?  
+- [ ] Enter SPX option  
+- [ ] Exit at nearest S/R (ideally ≥10 pts)
+
+---
+
+## **TRADE 2 — RETEST**
+- [ ] Candle breaks chop box **fully**  
+- [ ] Candle floats above/below box  
+- [ ] Breakout matches **9/21 EMA cross**  
+- [ ] Enter SPX option  
+- [ ] Exit at next S/R  
+- [ ] Confirm momentum with **9 EMA**  
+- [ ] Sell most at **10 pts**  
+- [ ] Hold runners to **20 pts**
+
+---
+
+## **EXECUTION**
+- [ ] Trade **20% of account**  
+- [ ] Avoid contracts < $100  
+- [ ] Use **0DTE or tomorrow expiration**  
+- [ ] Enter via **Thinkorswim → Charts → SPX → Option**
+
+
