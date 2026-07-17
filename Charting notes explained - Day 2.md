@@ -1,4 +1,3 @@
-Carl, here is **your final consolidated text + the complete cheat sheet**, clean, structured, beginner‑friendly, and ready for your notes, slides, or training materials.
 
 Everything below is the full system in one place.
 
