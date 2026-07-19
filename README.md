@@ -39,6 +39,21 @@ We’re learning a strategy together, not providing financial advice. Everyone i
 We celebrate wins, learn from losses, and maintain a constructive atmosphere. No negativity, shaming, or discouraging comments. We focus on progress, not perfection.
 
 ---
+## 📁 Central Resource Hub
+
+All group resources and documents will be stored in one central location here:  
+**https://github.com/tradecblood/5_minute_trader_study_group**
+
+This is a GitHub repository, which serves as a web‑based central location where files can be stored and accessed.
+
+You can create your own GitHub account to store your own notes too — totally optional and not required.
+
+---
+
+## 📚 Community Learning Roadmap
+
+The complete **Community Learning Roadmap**, outlining our entire learning plan **(i.e. THIS file)**, is also stored in the same repository:  
+**https://github.com/tradecblood/5_minute_trader_study_group/blob/main/README.md**
 
 ---
 
