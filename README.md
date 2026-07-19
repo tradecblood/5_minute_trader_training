@@ -63,6 +63,50 @@ Once the videos expire and we regroup, we’ll start a weekly learning agenda. W
 
 This approach ensures nobody gets left behind and everyone understands not just *what* to do, but *why* the strategy works.
 
+# 🧩 Weekly Workshop Structure (Phase 2)
+
+As part of Phase 2, I’m introducing a **weekly workshop structure** so we can work through each topic together in real time. These workshops will take place on live calls, where we’ll break down the content step by step, practise together, and make sure everyone is fully up to speed before moving on.
+
+### **How the workshops will work:**
+
+- Each week focuses on one core topic from our roadmap  
+- We learn it together on a live call  
+- We practise the skills during the session  
+- Everyone gets hands‑on support  
+- We **do not move on to the next week** until the whole group is comfortable with the material  
+- This ensures nobody gets left behind and everyone builds confidence at the same pace
+
+### **Your commitment matters**
+
+To make this work, it’s important that everyone shows up to the weekly sessions and participates. Growth requires consistency, and these workshops are designed to give you the structure, accountability, and support you need to progress.
+
+This is a collaborative learning environment — your presence helps you, and it also helps the group. When we learn together, we grow faster.
+
+If you ever need extra help outside the workshop, you can always ask in the group chat or request a recap during the next session.
+
+### **Timing & Time Zones**
+
+Most members are based in **EST**, while others (including our group admin) are in **Europe**. To make sure the workshops are accessible for everyone:
+
+- We’ll schedule sessions at times that work for the majority  
+- Typically this will be **late afternoon EST**, which is ** mid-evening UK/EU**  
+- Weekend sessions may be earlier in the day to balance time zones  
+- We’ll rotate occasionally so no one is consistently disadvantaged  
+
+The goal is to create a rhythm that works for the group while still being manageable across time zones.
+
+### **Why this structure works**
+
+- It creates shared understanding  
+- It keeps the group aligned  
+- It builds confidence through repetition and practice  
+- It encourages accountability  
+- It ensures mastery before progression  
+- It supports both beginners and more advanced learners  
+- It creates a rhythm that makes learning easier and more enjoyable
+
+We’re building a community that learns deeply, not quickly — and these workshops are the foundation of that approach.
+
 ---
 
 # 📘 Week 1 — Platform Setup & Trading Mechanics
@@ -193,14 +237,6 @@ Once everyone is comfortable with the strategy and platform setup, we’ll begin
   - What we learned  
 
 This builds confidence, sharpens skills, and helps us grow through shared experience.
-
----
-
-# 🤖 Future Direction — AI Charting Support
-
-As we progress, I’m also planning to create an AI tool that will help automate parts of the charting process for us — things like drawing levels, identifying structure, and marking key areas of interest.
-
-However, it’s important that **we first learn how to do all of this ourselves**. Understanding the strategy, the charting, and the reasoning behind each step is essential before relying on automation. Once the group is confident and consistent, we’ll introduce the AI tool as a way to support our workflow, not replace our understanding.
 
 ---
 
