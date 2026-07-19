@@ -57,6 +57,10 @@ The complete **Community Learning Roadmap**, outlining our entire learning plan 
 
 ---
 
+---
+
+ # 📚 Community Learning Roadmap — Detailed Learning Plan:
+ 
 ## 🌟 Phase 1 — Foundation Review (Now → July 26)
 *Making the most of the 5‑Minute Trader Challenge videos while they’re still available*
 
