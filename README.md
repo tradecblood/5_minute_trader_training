@@ -48,18 +48,13 @@ This is a GitHub repository, which serves as a web‑based central location wher
 
 You can create your own GitHub account to store your own notes too — totally optional and not required.
 
----
-
-## 📚 Community Learning Roadmap
-
 The complete **Community Learning Roadmap**, outlining our entire learning plan **(i.e. THIS file)**, is also stored in the same repository:  
 **https://github.com/tradecblood/5_minute_trader_study_group/blob/main/README.md**
 
----
 
 ---
 
- # 📚 Community Learning Roadmap — Detailed Learning Plan:
+ # 📚 Community Learning Roadmap (Our Detailed Learning Plan):
  
 ## 🌟 Phase 1 — Foundation Review (Now → July 26)
 *Making the most of the 5‑Minute Trader Challenge videos while they’re still available*
