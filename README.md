@@ -247,3 +247,9 @@ We support each other, share insights, and grow as a team.
 The pace is steady, the environment is encouraging, and the goal is mastery through collaboration.
 
 I’ll guide the structure, host the calls, and help break down the strategy — but the real strength of this group comes from everyone contributing, asking questions, and helping each other succeed.
+
+---
+
+# Next steps
+
+Once we have mastered the 5-minute trading strategy, we will move on to study options trading together. 
