@@ -6,7 +6,7 @@ I’ll continue adding to this over time, including clearer notes on key princip
 
 ---
 
-# 📚 Community Learning Roadmap — 5‑Minute Trader Group
+ # 📚 Community Learning Roadmap — 5‑Minute Trader Group
 
 Welcome to the group! This roadmap outlines how we’ll learn together over the next several weeks. The goal is to build confidence, clarity, and consistency — at a pace that works for everyone. This is a community‑based learning space, so we support one another, share insights, and grow as a team.
 
@@ -29,9 +29,16 @@ All posts, discussions, files, screenshots, and resources shared in this group m
 ### **4. Growth Requires Challenge**
 We’re building a learning environment where challenge is part of the process. Expect constructive feedback, honest conversations, and moments where we stretch beyond our comfort zones. Challenge is never personal — it’s how we grow.
 
-# 📚 Community Learning Roadmap — 5‑Minute Trader Group
+### **5. Support Each Other’s Learning**
+We all start at different levels. Ask questions freely, help others when you can, and remember that no question is “too basic.” We rise together.
 
-Welcome to the group! This roadmap outlines how we’ll learn together over the next several weeks. The goal is to build confidence, clarity, and consistency — at a pace that works for everyone. This is a community‑based learning space, so we support one another, share insights, and grow as a team.
+### **6. No Financial Advice or Guarantees**
+We’re learning a strategy together, not providing financial advice. Everyone is responsible for their own trades, risk management, and decisions.
+
+### **7. Keep the Environment Positive and Forward‑Focused**
+We celebrate wins, learn from losses, and maintain a constructive atmosphere. No negativity, shaming, or discouraging comments. We focus on progress, not perfection.
+
+---
 
 ---
 
