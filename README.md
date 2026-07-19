@@ -1,3 +1,5 @@
+# READ THIS FIRST
+
 # 5MTC Slower Paced Study Group
 
 This repository contains my notes from the **5‑Minute Trader Challenge**.
