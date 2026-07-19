@@ -28,3 +28,179 @@ All posts, discussions, files, screenshots, and resources shared in this group m
 
 ### **4. Growth Requires Challenge**
 We’re building a learning environment where challenge is part of the process. Expect constructive feedback, honest conversations, and moments where we stretch beyond our comfort zones. Challenge is never personal — it’s how we grow.
+
+# 📚 Community Learning Roadmap — 5‑Minute Trader Group
+
+Welcome to the group! This roadmap outlines how we’ll learn together over the next several weeks. The goal is to build confidence, clarity, and consistency — at a pace that works for everyone. This is a community‑based learning space, so we support one another, share insights, and grow as a team.
+
+---
+
+## 🌟 Phase 1 — Foundation Review (Now → July 26)
+*Making the most of the 5‑Minute Trader Challenge videos while they’re still available*
+
+Over the next week, we’ll all take time to rewatch the 5‑Minute Trader Challenge videos. This is a great chance to refresh the core concepts and make sure we’re all starting from the same baseline.
+
+### What we’ll do during this phase:
+- Rewatch the videos at your own pace  
+- Share insights, screenshots, and “aha moments” in the group  
+- Ask questions and help each other understand tricky parts  
+
+This keeps the group active and learning together while everyone gets comfortable with the material.
+
+---
+
+# 🌱 Phase 2 — Structured Weekly Learning (Starting after July 26)
+*We begin our guided learning journey together — step by step*
+
+Once the videos expire and we regroup, we’ll start a weekly learning agenda. We’ll begin from the very basics and build upward, making sure the majority of the group feels confident before moving on.
+
+This approach ensures nobody gets left behind and everyone understands not just *what* to do, but *why* the strategy works.
+
+---
+
+# 📘 Week 1 — Platform Setup & Trading Mechanics
+*Getting everyone fully set up and confident using their tools*
+
+Before we dive into charting and strategy, we’ll make sure everyone is properly set up on their trading platforms. This ensures that when we start applying the strategy, everyone knows exactly how to execute trades safely and confidently.
+
+### 1. Setting Up Accounts
+- Creating and navigating a **Charles Schwab** account  
+- Understanding account types (cash vs margin)  
+- Good‑faith violation rules  
+- Why we never enter trades that exceed our available liquidity  
+- Why we avoid using borrowed funds unless intentionally trading on margin  
+
+### 2. Thinkorswim (TOS) Setup
+- Installing and navigating Thinkorswim  
+- Setting up chart layouts  
+- Adding EMAs and indicators  
+- Understanding the **Options Chain**  
+- How to place a trade  
+- How to exit a trade  
+- How to set a stop‑loss  
+- **OnDemand vs PaperMoney**  
+  - *OnDemand:* replaying past market days  
+  - *PaperMoney:* simulated live trading  
+- When to use each mode for practice
+
+### 3. TradingView Setup
+- Creating a TradingView account  
+- Choosing a subscription level  
+- Adding EMAs and indicators  
+- Setting chart defaults  
+- **Setting your chart time zone to the exchange time zone**  
+- Saving chart layouts  
+- Navigating the interface confidently
+
+### 4. Risk Management Essentials
+- Never risking more than **20% of your trading account** on any single trade  
+- Understanding position sizing  
+- Why small, consistent trades build skill faster than large risky ones  
+- Emotional discipline and avoiding revenge trading  
+
+---
+
+# 📗 Week 2 — Core Fundamentals
+
+Before diving into Heather’s strategy, we’ll make sure everyone understands:
+
+- How to read a basic chart  
+- What the S&P 500 is and why it matters  
+- Candles, trends, swing highs/lows  
+- Moving averages and why EMAs are central to the strategy  
+
+This gives us a strong foundation for everything that comes next.
+
+---
+
+# 📙 Week 3 — Drawing Price Lines & Top‑Down Analysis
+
+We’ll learn how to:
+
+- Draw clean, meaningful price levels  
+- Identify important wicks  
+- Avoid clutter  
+- Perform top‑down analysis (Daily → 4H → 1H → 5M)
+
+Everyone will practice posting their charts, and we’ll review them together.
+
+---
+
+# 📕 Week 4 — The 5‑Minute Strategy (Day 3–4)
+
+We’ll break down the strategy step by step:
+
+- Bias selection  
+- EMA behaviour  
+- Liquidity grabs  
+- Micro break of structure  
+- Confirmation candle  
+- Entry timing  
+- Avoiding traps  
+
+We’ll practice marking entries on historical charts and share examples in the group.
+
+---
+
+# 📘 Week 5 — Fibonacci Retracement & Confluence
+
+We’ll cover:
+
+- How to draw fibs  
+- How fib levels add confluence  
+- How fibs interact with EMAs and structure  
+
+This is where the strategy becomes more precise and powerful.
+
+---
+
+# 📅 Phase 3 — Weekly or Twice‑Weekly Calls (Ongoing)
+*Consistent learning, community support, and shared progress*
+
+Once we’re in the structured learning phase, we’ll hold regular calls. These will include:
+
+- A topic of the week  
+- Live chart walkthroughs  
+- Group practice  
+- Q&A  
+- Homework or chart exercises  
+
+We’ll choose times that work for the majority (most members are EST), while still keeping things manageable for those in other time zones.
+
+---
+
+# 📈 Phase 4 — Trading Challenges (Ongoing)
+*Putting the strategy into practice together*
+
+Once everyone is comfortable with the strategy and platform setup, we’ll begin group trading challenges.
+
+### How it works:
+- We pick a day to trade the 5‑minute chart  
+- Everyone takes the same trade (paper or real)  
+- After market close, we review the trade together  
+- We share:
+  - Our levels  
+  - Our bias  
+  - Our entry  
+  - Our results  
+  - What we learned  
+
+This builds confidence, sharpens skills, and helps us grow through shared experience.
+
+---
+
+# 🤖 Future Direction — AI Charting Support
+
+As we progress, I’m also planning to create an AI tool that will help automate parts of the charting process for us — things like drawing levels, identifying structure, and marking key areas of interest.
+
+However, it’s important that **we first learn how to do all of this ourselves**. Understanding the strategy, the charting, and the reasoning behind each step is essential before relying on automation. Once the group is confident and consistent, we’ll introduce the AI tool as a way to support our workflow, not replace our understanding.
+
+---
+
+# 🤝 The Spirit of the Group
+
+This community is about learning *together*.  
+We support each other, share insights, and grow as a team.  
+The pace is steady, the environment is encouraging, and the goal is mastery through collaboration.
+
+I’ll guide the structure, host the calls, and help break down the strategy — but the real strength of this group comes from everyone contributing, asking questions, and helping each other succeed.
