@@ -186,14 +186,6 @@ This builds confidence, sharpens skills, and helps us grow through shared experi
 
 ---
 
-# 🤖 Future Direction — AI Charting Support
-
-As we progress, I’m also planning to create an AI tool that will help automate parts of the charting process for us — things like drawing levels, identifying structure, and marking key areas of interest.
-
-However, it’s important that **we first learn how to do all of this ourselves**. Understanding the strategy, the charting, and the reasoning behind each step is essential before relying on automation. Once the group is confident and consistent, we’ll introduce the AI tool as a way to support our workflow, not replace our understanding.
-
----
-
 # 🤝 The Spirit of the Group
 
 This community is about learning *together*.  
