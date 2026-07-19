@@ -1,3 +1,5 @@
+# Charting: How to draw time lines and use them for top-down analysis. 
+
 # 🧠 Why We Use Top‑Down Analysis (Even When Trading the 5‑Minute Chart)
 
 Even though entries and final bias are chosen on the **5‑minute chart**, the 5M cannot be trusted on its own. Lower timeframes move fast, create noise, and produce many fake signals. Top‑down analysis means charting on konger time frames like the 1 day or 4 hour price charts, because it gives structure and context so the 5M becomes reliable instead of random.
