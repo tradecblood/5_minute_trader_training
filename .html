@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5MTC Study Group — Ask the Notes</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root{
+    --bg: #0A0C0F;
+    --surface: #14171C;
+    --surface-2: #191D23;
+    --line: #232830;
+    --text: #E7E9EC;
+    --muted: #8A919C;
+    --green: #2ECC8F;
+    --purple: #A78BFA;
+    --red: #EF5350;
+  }
+
+  *{box-sizing:border-box; margin:0; padding:0;}
+
+  html,body{height:100%;}
+
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Inter', -apple-system, sans-serif;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+
+  /* ---- Header : ticker-strip styling, referencing the repo's own Daily/4H/5M level colors ---- */
+  header{
+    flex-shrink:0;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+  }
+
+  .level-strip{
+    height:3px;
+    display:flex;
+  }
+  .level-strip span{flex:1;}
+  .level-strip .l1{background:#3a3f47;}
+  .level-strip .l2{background:var(--green);}
+  .level-strip .l3{background:var(--purple);}
+
+  .header-inner{
+    padding:18px 22px 16px;
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+
+  .title-block .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.14em;
+    color:var(--muted);
+    text-transform:uppercase;
+    margin-bottom:4px;
+  }
+  .title-block h1{
+    font-size:19px;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  .title-block h1 .accent{color:var(--purple);}
+
+  .status{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--muted);
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .status .dot{
+    width:6px; height:6px; border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 6px var(--green);
+  }
+
+  /* ---- Chat area ---- */
+  main{
+    flex:1;
+    overflow-y:auto;
+    padding:22px 16px 12px;
+    display:flex;
+    justify-content:center;
+  }
+  .thread{
+    width:100%;
+    max-width:680px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+  }
+
+  .empty-state{
+    margin-top:8vh;
+    text-align:center;
+    color:var(--muted);
+  }
+  .empty-state .glyph{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.1em;
+    color:var(--purple);
+    margin-bottom:10px;
+  }
+  .empty-state p{font-size:14px; line-height:1.6; max-width:420px; margin:0 auto;}
+  .suggestions{
+    margin-top:22px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    align-items:center;
+  }
+  .suggestion-btn{
+    font-family:'Inter', sans-serif;
+    font-size:13px;
+    color:var(--text);
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:8px;
+    padding:9px 14px;
+    cursor:pointer;
+    text-align:left;
+    width:100%;
+    max-width:380px;
+    transition:border-color .15s ease, background .15s ease;
+  }
+  .suggestion-btn:hover{border-color:var(--purple); background:var(--surface-2);}
+
+  .msg{
+    display:flex;
+    flex-direction:column;
+    max-width:100%;
+  }
+  .msg.user{align-items:flex-end;}
+  .msg.assistant{align-items:flex-start;}
+
+  .msg .role{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--muted);
+    margin-bottom:6px;
+    padding:0 2px;
+  }
+
+  .bubble{
+    padding:12px 14px;
+    border-radius:10px;
+    font-size:14.5px;
+    line-height:1.55;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+  }
+  .msg.user .bubble{
+    background:var(--surface);
+    border:1px solid var(--line);
+    max-width:78%;
+  }
+  .msg.assistant .bubble{
+    background:transparent;
+    border-left:2px solid var(--purple);
+    padding-left:16px;
+    max-width:92%;
+  }
+  .msg.assistant .bubble strong{color:var(--text); font-weight:600;}
+
+  .thinking{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding-left:16px;
+    border-left:2px solid var(--purple);
+    opacity:0.7;
+  }
+  .thinking .bar{
+    width:34px; height:2px;
+    background:var(--purple);
+    animation:pulse 1.1s ease-in-out infinite;
+  }
+  @keyframes pulse{
+    0%,100%{opacity:0.25; transform:scaleX(0.4); transform-origin:left;}
+    50%{opacity:1; transform:scaleX(1); transform-origin:left;}
+  }
+
+  .error-note{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--red);
+    border-left:2px solid var(--red);
+    padding-left:16px;
+  }
+
+  /* ---- Composer ---- */
+  .composer-wrap{
+    flex-shrink:0;
+    display:flex;
+    justify-content:center;
+    padding:12px 16px 18px;
+    background:var(--bg);
+    border-top:1px solid var(--line);
+  }
+  .composer{
+    width:100%;
+    max-width:680px;
+    display:flex;
+    gap:8px;
+    align-items:flex-end;
+  }
+  textarea{
+    flex:1;
+    resize:none;
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:10px;
+    color:var(--text);
+    font-family:'Inter', sans-serif;
+    font-size:14px;
+    padding:11px 13px;
+    max-height:140px;
+    line-height:1.4;
+  }
+  textarea:focus{outline:none; border-color:var(--purple);}
+  textarea::placeholder{color:var(--muted);}
+
+  button.send{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    letter-spacing:0.05em;
+    background:var(--purple);
+    color:#0A0C0F;
+    border:none;
+    border-radius:10px;
+    padding:12px 16px;
+    cursor:pointer;
+    font-weight:600;
+    transition:opacity .15s ease;
+  }
+  button.send:disabled{opacity:0.4; cursor:not-allowed;}
+  button.send:hover:not(:disabled){opacity:0.85;}
+
+  .footnote{
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10px;
+    color:var(--muted);
+    margin-top:8px;
+    letter-spacing:0.02em;
+  }
+
+  main::-webkit-scrollbar{width:8px;}
+  main::-webkit-scrollbar-thumb{background:var(--line); border-radius:4px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="level-strip"><span class="l1"></span><span class="l2"></span><span class="l3"></span></div>
+  <div class="header-inner">
+    <div class="title-block">
+      <div class="eyebrow">5MTC Study Group</div>
+      <h1>Ask the <span class="accent">Notes</span></h1>
+    </div>
+    <div class="status"><span class="dot"></span>Knowledge loaded — 4 documents</div>
+  </div>
+</header>
+
+<main>
+  <div class="thread" id="thread">
+    <div class="empty-state" id="emptyState">
+      <div class="glyph">// READ THIS FIRST</div>
+      <p>Ask anything about the group's roadmap, the charting guides, or the 5‑minute strategy document. Answers come only from what's written in the repo.</p>
+      <div class="suggestions">
+        <button class="suggestion-btn" data-q="What's the difference between the black, green, and purple lines?">What's the difference between the black, green, and purple lines?</button>
+        <button class="suggestion-btn" data-q="What are the entry rules for a call vs a put?">What are the entry rules for a call vs a put?</button>
+        <button class="suggestion-btn" data-q="What's the weekly learning roadmap for the group?">What's the weekly learning roadmap for the group?</button>
+        <button class="suggestion-btn" data-q="What are the account and position sizing rules?">What are the account and position sizing rules?</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="composer-wrap">
+  <div style="width:100%; max-width:680px; margin:0 auto;">
+    <div class="composer">
+      <textarea id="input" rows="1" placeholder="Ask about the strategy, the roadmap, the group rules..."></textarea>
+      <button class="send" id="sendBtn">ASK</button>
+    </div>
+    <div class="footnote">Answers are based only on the group's repo notes — not financial advice.</div>
+  </div>
+</div>
+
+<script>
+// ---------------------------------------------------------------------------
+// Repo knowledge base (tradecblood/5_minute_trader_study_group), embedded so
+// every answer is grounded in the actual documents rather than the model's
+// general knowledge.
+// ---------------------------------------------------------------------------
+const KNOWLEDGE = `
+=== FILE: README.md ===
+
+# READ THIS FIRST — 5MTC Slower Paced Study Group
+
+This repository contains notes from the 5‑Minute Trader Challenge, continually added to over time.
+
+## Group Rules & Community Culture
+1. Be Kind and Courteous — treat everyone with respect.
+2. Respect Everyone's Privacy — what's shared in the group (experiences, struggles, wins, questions) stays in the group.
+3. No External Sharing of Group Content — posts, discussions, files, screenshots, and resources must remain inside the group; do not distribute externally without explicit permission from admins and the original content creator.
+4. Growth Requires Challenge — constructive feedback and honest conversation are part of the process.
+5. Support Each Other's Learning — no question is "too basic."
+6. No Financial Advice or Guarantees — this is a shared learning space, not financial advice. Everyone is responsible for their own trades, risk management, and decisions.
+7. Keep the Environment Positive and Forward-Focused — no negativity or shaming; focus on progress.
+
+## Central Resource Hub
+All resources live in this GitHub repo. Members may optionally create their own GitHub account for personal notes.
+
+## Community Learning Roadmap
+
+### Phase 1 — Foundation Review (Now → July 26)
+Rewatch the 5-Minute Trader Challenge videos at your own pace while they're still available. Share insights, screenshots, and "aha moments." Ask questions and help each other.
+
+### Phase 2 — Structured Weekly Learning (Starting after July 26)
+Weekly live-call workshops, one core topic per week, practiced together in real time. The group does not move to the next week until everyone is comfortable. Most members are EST; admin is in Europe — sessions typically scheduled late afternoon EST / mid-evening UK-EU, with occasional rotation.
+
+- Week 1 — Platform Setup & Trading Mechanics: Charles Schwab account setup (cash vs margin, good-faith violations, avoiding borrowed funds), Thinkorswim (TOS) setup (chart layouts, EMAs/indicators, options chain, placing/exiting trades, stop-loss, OnDemand vs PaperMoney), TradingView setup (account, subscription, EMAs, chart timezone = exchange timezone, saving layouts), Risk Management Essentials (never risk more than 20% of account on a single trade, position sizing, small consistent trades, emotional discipline / avoiding revenge trading).
+- Week 2 — Core Fundamentals: reading a basic chart, what the S&P 500 is, candles, trends, swing highs/lows, moving averages and why EMAs are central.
+- Week 3 — Drawing Price Lines & Top-Down Analysis: clean meaningful price levels, identifying important wicks, avoiding clutter, top-down analysis (Daily → 4H → 1H → 5M), practicing posting charts for review.
+- Week 4 — The 5-Minute Strategy (Day 3-4): bias selection, EMA behavior, liquidity grabs, micro break of structure, confirmation candle, entry timing, avoiding traps.
+- Week 5 — Fibonacci Retracement & Confluence: drawing fibs, fib levels as confluence, how fibs interact with EMAs and structure.
+
+### Phase 3 — Weekly or Twice-Weekly Calls (Ongoing)
+Topic of the week, live chart walkthroughs, group practice, Q&A, homework/chart exercises.
+
+### Phase 4 — Trading Challenges (Ongoing)
+The group picks a day to trade the 5-minute chart together (paper or real), everyone takes the same trade, then reviews levels, bias, entry, results, and lessons after market close.
+
+### Next Steps
+Once the 5-minute strategy is mastered, the group will move on to study options trading together.
+
+=== FILE: Charting: Part 1: Key terms explained from Day 2.md ===
+
+# THE COMPLETE BEGINNER GUIDE — Multi-Timeframe Levels + EMA Strategy + Chop + Candle Confirmation
+
+## PART 1 — What Are These Lines?
+Lines are "levels" — important price zones drawn from different timeframes. Different timeframes = different strength. Think of them like walls the market hits.
+
+- BLACK Line — Daily Level (Strongest). Taken from the daily chart. Watched by hedge funds, banks, algorithms, large traders. Acts like a major wall. Price behavior: Bounce (hits level, goes up), Reject (hits level, goes down), Stall (pauses/sideways), Break (pushes through with strength), Trend shift (breaking a daily level can change the whole market direction). Analogy: a big brick wall.
+- GREEN Line — 4-Hour Level (Medium Strength). Used by swing/intraday traders. Behavior: Stall, Wick (brief touch then pullback), Short reversal. Analogy: a medium wall.
+- PURPLE Line — 5-Minute Level (Weakest but Most Useful). Taken from the first 5-minute candle of the day. Good for scalping/quick trades: fast reactions, short moves, great for entries, not strong enough to set the big trend. Analogy: a small wall.
+
+## PART 2 — Technical Terms Explained
+- Support: level where price tends to stop falling and bounce upward.
+- Resistance: level where price tends to stop rising and fall downward.
+- Reject/Rejection: price touches a level and immediately moves away.
+- Bounce: price hits a level and moves upward.
+- Stall: price slows down or moves sideways.
+- Wick: thin line on a candle showing where price briefly went before pulling back.
+- Break: price pushes through a level with strength.
+- Retest: price breaks a level, then comes back to touch it again.
+- Trend: overall market direction — Uptrend = higher highs/higher lows; Downtrend = lower highs/lower lows.
+- EMA (Exponential Moving Average): average price weighted toward recent candles. Uses 9 EMA (fast), 21 EMA (medium), 200 EMA (long-term trend).
+- EMA Cross: when 9 EMA crosses 21 EMA. Upward cross (9 above 21) = bullish; downward cross (9 below 21) = bearish. This is the entry trigger.
+
+## PART 3 — Putting It Together
+- Daily (Black) = Big Direction — sets overall trend.
+- 4-Hour (Green) = Intraday Bias — whether today leans bullish or bearish.
+- 5-Minute (Purple) = Entry Zone — where you take actual trades.
+
+## PART 4 — Understanding CHOP
+Chop = sideways movement with no direction; price stuck in a box. Recognize chop by: no higher highs, no lower lows, EMAs tangled, price bouncing around, low volume, fake breakouts. Chop is dangerous because EMA signals fail, breakouts fail, price reverses instantly, and you can lose money fast. In chop: do NOTHING. Wait for a breakout, a retest, a 9/21 EMA cross, and direction matching the 200 EMA — then enter.
+
+## PART 5 — Full System: Levels + 9/21 EMA + 200 EMA + Chop + Candle Confirmation
+
+CALL ENTRY (Bullish) — enter when ALL are true:
+1. Price above 200 EMA
+2. Price above 4-hour green level
+3. Break OUT of chop box
+4. Retest of breakout
+5. Green candle among red candles (momentum confirmation)
+6. 9 EMA crosses ABOVE 21 EMA
+7. Volume increasing
+8. Entry at or near the 5-minute level (purple)
+
+PUT ENTRY (Bearish) — enter when ALL are true:
+1. Price below 200 EMA
+2. Price below 4-hour green level
+3. Break DOWN from chop box
+4. Retest of breakout
+5. Red candle among green candles (momentum confirmation)
+6. 9 EMA crosses BELOW 21 EMA
+7. Volume increasing
+8. Entry at or near the 5-minute level (purple)
+
+## PART 6 — Why a Green Candle Can Appear in a Put Setup
+A green candle inside a red trend = pullback. A red candle inside a green trend = pullback. Pullbacks are normal — they do NOT change the trend, do NOT cancel the setup, do NOT mean "switch direction." They mean price is retesting before continuing. Example: price breaks DOWN from chop (bearish) → retests the chop box bottom (normal) → a green candle appears (pullback) → sellers return (rejection) → downtrend continues (put re-entry).
+
+## PART 7 — When to EXIT a Trade
+Exit when ANY of these happen: price hits the next major level (daily/4H/5M), price touches the 200 EMA (acts like a wall), an opposite 9/21 EMA cross occurs (momentum shifts), price enters chop (sideways = danger), or volume dies (weak move).
+
+## PART 8 — Example
+Price moving up: hits the green 4-hour level → medium reaction, possible wick or stall. Hits the black daily level → strong reaction, big bounce or rejection, trend may change.
+
+## PART 9 — Easiest Way to Remember
+Daily = Big Wall. 4-Hour = Medium Wall. Price reacts differently depending on which wall it hits.
+
+## FINAL CHEAT SHEET
+BLACK (Daily): strongest level, sets big trend, acts like a brick wall.
+GREEN (4-Hour): medium strength, sets intraday bias.
+200 EMA: trend filter — above = calls, below = puts.
+9/21 EMA CROSS: entry trigger — 9>21 = calls, 9<21 = puts.
+CHOP BOX: sideways movement, EMAs tangled, fakeouts, no trading.
+CALL ENTRY: above 200 EMA, above 4H level, break out of chop, retest, green candle among red (momentum), 9/21 cross up, volume rising, entry at 5M level.
+PUT ENTRY: below 200 EMA, below 4H level, break down from chop, retest, red candle among green (momentum), 9/21 cross down, volume rising, entry at 5M level.
+IMPORTANT: a green candle in a bearish retest does NOT mean calls; a red candle in a bullish retest does NOT mean puts.
+EXIT RULES: hit major level, touch 200 EMA, opposite EMA cross, enter chop, volume dies.
+
+=== FILE: Charting: Part 2: How to draw price lines and use them for top-down analysis.md ===
+
+# Charting: How to draw price lines and use them for top-down analysis
+
+## Why Use Top-Down Analysis (Even When Trading the 5-Minute Chart)
+Entries and final bias are chosen on the 5-minute chart, but the 5M can't be trusted alone — lower timeframes move fast, create noise, and produce fake signals. Top-down analysis (charting longer timeframes like 1D/4H) gives structure and context so the 5M becomes reliable instead of random.
+
+What higher timeframes provide:
+- 1D (Daily): major levels institutions respect; controls the entire market.
+- 4H: medium-term structure, consolidation zones, where price is building energy.
+- 1H: confirms trend direction, breaks of structure, pullbacks, EMA slope, liquidity behavior.
+
+Why it matters for the 5M: without higher-timeframe context, a 5M signal can easily be a fake breakout, a liquidity grab, a pullback mistaken for a reversal, noise inside consolidation, or a trap into a major level.
+
+Core idea: higher timeframes tell you what the market is doing; the 5M tells you when to enter. This keeps bias accurate and entries precise.
+
+## Top-Down Analysis Checklist
+
+1) Daily Chart (1D) — Major Structure
+Mark major swing highs (peaks where price reverses downward) and major swing lows (bottoms where price reverses upward). Identify the peak and trough of the overall trend. Draw levels where multiple candle wicks align. Highlight strong support/resistance zones. Note overall trend direction (bullish, bearish, or ranging).
+
+2) 4-Hour Chart (4H) — Medium Structure
+Refine the 1D levels (do NOT duplicate them). Mark intermediate swing highs/lows. Identify consolidation zones — structured choppiness where price moves sideways in a tight range with clear upper/lower boundaries, showing indecision and order buildup before a breakout; useful for planning entries, but avoid trading directly inside it. Distinguish consolidation (controlled, structured, tradable context) from random choppiness (messy, erratic, no structure — avoid trading here). Spot trend continuation or early reversal areas. Note how price behaves inside the daily levels.
+
+3) 1-Hour Chart (1H) — Context + Setup Validation
+Identify the broader trend direction. Mark breaks of structure. Observe pullbacks into 1D/4H levels. Check EMA behavior (alignment, slope). Confirm with volume (rising volume = stronger trend). Watch for liquidity grabs — when price briefly breaks above a key high or below a key low to trigger stop losses/pending orders, then immediately reverses; this exposes fake breakouts and often marks the true turning point. Use the 1H to understand context, not to choose entries — it tells you whether your 5M bias (bullish=
