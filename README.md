@@ -11,20 +11,25 @@ I’ll continue adding to this over time, including clearer notes on key princip
 
 # 👋 Welcome to the 5MT Slower Paced Study Group
 
+---
+
+# 👋 Welcome to the 5‑Minute Trader Slower Paced Study Group
+
 Hey — glad you're here. Before we get into the rules and the roadmap, I wanted to take a moment to say why this group exists and how it's going to work.
 
-Welcome to the 5‑Minute Trader Slower Paced Study Group.
-
-At its heart, this is a **community learning group** — a space where we work through this together, at a pace that actually suits everyone. The role of admin(s) is to facilitate: they put together the learning plan, organise the sessions, and break the content down into something clear and understandable to help get everyone confident and up to speed. This is not a teaching-service, but a space where we grow and learn together.
+At its heart, this is a **community learning group** — a space where we work through this together, at a pace that actually suits everyone. The role of admin(s) is to facilitate: they put together the learning plan, organise the sessions, and break the content down into something clear and understandable to help get everyone confident and up to speed. This is not a teaching-service, but a space where we grow and learn together — supportive, but not afraid to challenge each other, with a clear roadmap ahead so everyone knows what's next.
 
 Here's what that means in practice:
 
+- **We follow a clear learning plan.** No guessing what's next — there's a roadmap in place, so you always know where we're headed and why.
 - **We learn as a team, not an audience.** Your questions, your "aha" moments, your struggles — they help everyone, not just you.
 - **No one gets left behind.** This isn't a race. We go at the pace the group actually needs.
-- **We don't move to the next stage until we *all* get it.** If part of the group is still finding their footing on something, we stay there until it clicks. Understanding comes before progress.
+- **We don't move to the next stage until we all get it.** If part of the group is still finding their footing on something, we stay there until it clicks. Understanding comes before progress.
 - **Every level belongs here.** Complete beginner or already trading — there's a seat at this table for you, and helping each other is part of how we all get up to speed together.
 
 If that sounds like the kind of group you want to be part of, you're in the right place. Let's get into how it all works.
+
+---
 
 ---
 
