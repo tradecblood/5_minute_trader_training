@@ -9,7 +9,7 @@ I’ll continue adding to this over time, including clearer notes on key princip
 
 # 👋 Welcome to the 5MTC Slower Paced Study Group
 
-Hey — glad you're here. Before we get into the rules and the roadmap, I wanted to take a moment to say why this group exists and how it's going to work.
+Hey — glad you're here. Before we get into our learning roadmap, I wanted to take a moment to say why this group exists and how it's going to work.
 
 At its heart, this is a **community learning group** — a space where we work through this together, at a pace that actually suits everyone. The role of admin(s) is to facilitate: they put together the learning plan, organise the sessions, and break the content down into something clear and understandable to help get everyone confident and up to speed. This is not a teaching-service, but a space where we grow and learn together — supportive, but not afraid to challenge each other, with a clear roadmap ahead so everyone knows what's next.
 
