@@ -53,6 +53,34 @@ You can create your own GitHub account to store your own notes too — totally o
 The complete **Community Learning Roadmap**, outlining our entire learning plan **(i.e. THIS file)**, is also stored in the same repository:  
 **https://github.com/tradecblood/5_minute_trader_study_group/blob/main/README.md**
 
+---
+
+## 🤖 Ask the Notes — AI Agent
+
+We have a brand new AI Agent called **‘Ask the Notes’** that members can use to query our admin’s study notes.
+
+It is trained on the study notes *plus* general AI knowledge on options trading, giving it a broader base of information to provide additional context.
+
+---
+
+## ⏳ Daily Usage Limit
+
+Currently, the AI agent has a **daily request limit** that resets each evening.  
+This is because it uses the *free* version of Claude.
+
+Please ensure your usage is considerate of other group members.
+
+
+---
+
+## ⏳ Daily Usage Limit
+
+Currently, the AI agent has a **daily request limit** that resets each evening.  
+This is because it uses the *free* version of Claude.
+
+Please ensure your usage is considerate of other group members.
+
+
 
 ---
 
