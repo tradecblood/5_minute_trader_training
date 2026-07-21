@@ -1,6 +1,6 @@
 # READ THIS FIRST
 
-# 5MTC Slower Paced Study Group
+# 5MT Slower Paced Study Group
 
 This repository contains my notes from the **5‑Minute Trader Challenge**.
 
@@ -9,7 +9,7 @@ I’ll continue adding to this over time, including clearer notes on key princip
 
 ---
 
-# 👋 Welcome to the 5‑Minute Trader Slower Paced Study Group
+# 👋 Welcome to the 5MT Slower Paced Study Group
 
 Hey — glad you're here. Before we get into the rules and the roadmap, I wanted to take a moment to say why this group exists and how it's going to work.
 
