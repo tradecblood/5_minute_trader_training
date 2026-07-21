@@ -70,18 +70,6 @@ This is because it uses the *free* version of Claude.
 
 Please ensure your usage is considerate of other group members.
 
-
----
-
-## ⏳ Daily Usage Limit
-
-Currently, the AI agent has a **daily request limit** that resets each evening.  
-This is because it uses the *free* version of Claude.
-
-Please ensure your usage is considerate of other group members.
-
-
-
 ---
 
  # 📚 Community Learning Roadmap (Our Detailed Learning Plan):
@@ -281,6 +269,14 @@ Once everyone is comfortable with the strategy and platform setup, we’ll begin
   - What we learned  
 
 This builds confidence, sharpens skills, and helps us grow through shared experience.
+
+---
+
+## 🌱 Learning Philosophy
+
+As this community is about learning together, our focus is on **growth over speed**.
+
+This means that if we need to spend several sessions mastering one particular topic, we will prioritise this rather than moving forward without a solid understanding.
 
 ---
 
